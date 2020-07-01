@@ -24,7 +24,7 @@ Uzdevuma apraksts:
 >A pandas DataFrame stores data in a tabular format with integrated indexing. That means each column has a column name and each row has a row index. All of the examples will be using pandas DataFrames.
 
 
-[DZone teksts par Using Python Pandas for Log Analysis](https://dzone.com/articles/using-python-pandas-for-log-analysis])
+[DZone teksts par Using Python Pandas for Log Analysis](https://dzone.com/articles/using-python-pandas-for-log-analysis)
 
 
 Nav skaidrs:
