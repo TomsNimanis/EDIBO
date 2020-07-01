@@ -27,6 +27,8 @@ Uzdevuma apraksts:
 [DZone teksts par Using Python Pandas for Log Analysis](https://dzone.com/articles/using-python-pandas-for-log-analysis)
 
 
+[Python kā atrast dir un importēt .csv failu](https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/)
+
 Nav skaidrs:
 
 1.Kurā shell tiek rakstītas komandas. Vai tās strādā jebkurā terminālī? Vai pastāv analogs IDE (integrated developer environment)?
