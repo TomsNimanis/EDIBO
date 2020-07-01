@@ -2,7 +2,7 @@ Uzdevuma apraksts:
 
 **Analysis of Windows Event logs using Pandas DataFrame**
 
-Windows Event Logs exportē datus XML formatā. Lai tos padarītu lasāmākus izmanto Pandas
+~~Windows Event Logs exportē datus XML formatā. Lai tos padarītu lasāmākus izmanto Pandas~~
 
 [Tutorial Pandas DataFrame izmantošanā](https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python)
 
