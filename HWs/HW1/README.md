@@ -27,4 +27,11 @@ Windows Event Logs exportē datus XML formatā. Lai tos padarītu lasāmākus iz
 [DZone teksts par Using Python Pandas for Log Analysis](https://dzone.com/articles/using-python-pandas-for-log-analysis])
 
 
+Nav skaidrs:
+
+1.Kurā shell tiek rakstītas komandas. Vai tās strādā jebkurā terminālī? Vai pastāv analogs IDE (integrated developer environment)?
+
+Atradu atbildi, ka ir zem conda vai pip distribution.
+
+
 
