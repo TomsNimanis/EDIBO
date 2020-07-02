@@ -55,6 +55,8 @@ Windows 10 20.04 versija tad pieejams WSL 2.0
 
 **HW bit operācijas / bitwise operations https://en.wikipedia.org/wiki/Bitwise_operation **
 
+[Bitwise Operations Tutorial](https://www.youtube.com/embed/h_bHdbk5Jh4)  
+
 Python
 
 2**3
