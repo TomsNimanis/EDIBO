@@ -1,0 +1,207 @@
+    1  python
+    2  sudo apt install python
+    3  python
+    4  sudo add-apt-repository ppa:deadsnakes/ppa
+    5  sudo apt-get update
+    6  sudo apt-get install python3.6
+    7  sudo apt-get install python3.7
+    8  sudo apt install python3-pip
+    9  sudo update-alternatives --install /usr/bin/python3 /usr/bin/python3.6 1
+   10  python
+   11  python3.6
+   12  pip install panda
+   13  python-pip
+   14  sudo apt install python-pip
+   15  python
+   16  pip install pandas
+   17  python
+   18  cd Downloads
+   19  pythons
+   20  python
+   21  init 0
+   22  /usr/lib/nux/unity_support_test -p
+   23  /lib/nux/unity_support_test -p
+   24  unity_support_test -p
+   25  /usr/lib/nux/unity_support_test -p
+   26  init 0
+   27  os.wcd() cd
+   28  cd
+   29  listdir
+   30  help
+   31  pwd
+   32  help
+   33  dirs
+   34  cd
+   35  history
+   36  ls
+   37  ls ..
+   38  ls .
+   39  ls..
+   40  ls ..
+   41  ls /
+   42  ls
+   43  ls /home/
+   44  ls /home/user/
+   45  ls /home/jokimazi/
+   46  ls /home/jokimazi/Downloads/
+   47  ls ..
+   48  ls /home/jokimazi/Downloads/..
+   49  ls /home/sc/
+   50  pwd
+   51  ls
+   52  ls /home/jokimazi/Desktop/
+   53  ls /home/jokimazi/Desktop/.
+   54  ls /home/jokimazi/Downloads/
+   55  cd  Desktop
+   56  ..
+   57  cd ..
+   58  cd  Desktop
+   59  history
+   60  ls
+   61  pwd
+   62  cd .
+   63  cd 428
+   64  cd new 428
+   65  cd new
+   66  new cd 428
+   67  mkdir 428
+   68  cd 428
+   69  mkdir ABC
+   70  mkdir abc
+   71  ABc
+   72  mkdir Abc
+   73  mkdir aBC
+   74  mkdir abC
+   75  pwd
+   76  ls
+   77  mkdir aBc
+   78  ls
+   79  mkdir ABc
+   80  ls
+   81  mkdir AbC
+   82  ls
+   83  ..
+   84  cd ..
+   85  ls | ls | ls | ls | cd ..
+   86  ls | head
+   87  ls | tail
+   88  cd ..
+   89  cd /etc
+   90  ls
+   91  ls |head
+   92  ls | tail
+   93  ls |head3
+   94  ls |head 3
+   95  ls |head.3
+   96  ls | head -n 3
+   97  ls | head -c 5
+   98  ls | head -n 3
+   99  ls | head -n | wc
+  100  ls | head -n | line
+  101  ls | head -n | wcv -w
+  102  ls | head -n | wcv -l
+  103  ls | head -n | wc -w
+  104  ls | head -n | wc -l
+  105  ls | head -n 3
+  106  ls | head -n | wc
+  107  ls | head -n 3 | wc
+  108  ls | head -n 3 | wc -l
+  109  ls | head -n 3 | wc -c
+  110  ls | head -n 3 | wc -w
+  111  ls | wc -c
+  112  cd
+  113  ls Desktop/
+  114  ls | wc -c
+  115  cdpwd
+  116  pwd
+  117  ls
+  118  cd Desktop
+  119  ls | wc -m
+  120  wc help
+  121  wc --help
+  122  wc -help
+  123  wc --help
+  124  java
+  125  sudo apt install openjdk-8-jre-headless
+  126  java
+  127  java -ersion
+  128  java -version
+  129  java10
+  130  jshell
+  131  python
+  132  python3
+  133  sudo apt install openjdk-11-jdk-headless
+  134  exit() python
+  135  python3
+  136  cd
+  137  ls
+  138  pwd
+  139  a=
+  140  a=123
+  141  a=
+  142  echo a
+  143  echo $a
+  144  a=123
+  145  echo $a
+  146  c="Hello World"
+  147  echo c
+  148  echo $c
+  149  echo $c $a
+  150  echo $c, $a
+  151  echo 
+  152  $d = ","
+  153  d = ","
+  154  d =","
+  155  d=","
+  156  echo $d
+  157  echo date
+  158  echo $date
+  159  echo --date
+  160  echo ~date
+  161  d=date|echo date
+  162  d=date|echo $d
+  163  e=date|echo $e
+  164  date
+  165  echo 'date'
+  166  echo `date`
+  167  a=123
+  168  b=44
+  169  c=$123+$44
+  170  echo $c
+  171  c=123+44
+  172  echo $c
+  173  echo (($a+$b))
+  174  echo $(($a+$b))
+  175  echo "$a+$b | bc
+  176  echo "$a+$b" | bc
+  177  echo
+  178  /
+  179  bc
+  180  echo "$a+$b | bc
+  181  echo "$a+$b" | bc
+  182  echo
+  183  /
+  184  bc
+  185  echo $(($a+$b))
+  186  a=123
+  187  b=44
+  188  echo $(($a+$b))
+  189  ecjo expr $a+$b
+  190  echo expr $a+$b
+  191  echo `expr $a+$b`
+  192  echo `expr` $a+$b
+  193  echo expr $a+$b
+  194  expr $a+$b
+  195  expr `$a+$b`
+  196  echo $(($a+$b))
+  197  pwd
+  198  ls
+  199  echo $(($a+$b))
+  200  echo $((a+b)) EUR
+  201  echo $((a+b)) EUR > a.txt
+  202  ls
+  203  ls -l
+  204  ls -l a.txt
+  205  cat a.txt
+  206  history
+  207  history >h.txt
