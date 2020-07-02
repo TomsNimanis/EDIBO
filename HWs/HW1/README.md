@@ -34,7 +34,7 @@ Source: https://shanelynnwebsite-mid9n9g1q9y8tt.netdna-ssl.com/wp-content/upload
 
 **Ja nepieciešams mainīt dir:**
 
-[Sīkāk par ~cd Downloads](https://askubuntu.com/questions/262674/how-do-i-cd-into-a-directory-in-the-home-folder)
+[Sīkāk par ~cd Downloads](https://askubuntu.com/a/264320)
 
 
 Nav skaidrs:
