@@ -79,10 +79,13 @@ echo $((a+b)) - ((expressions))  starp diviem skaitļiem
 
 [Paraugs](https://stackoverflow.com/questions/4750763/how-do-i-echo-a-sum-of-a-variable-and-a-number)
 
->cat a.txt
->head a.txt
->tail a.txt
->ls -l *.txt
+>cat a.txt  
+head a.txt  
+tail a.txt  
+ls -l *.txt  
+
+
+Line break ir double spacebar  
 ￼
 
 ![Image example for ls](https://i.imgur.com/JFjl4fJ.png)
