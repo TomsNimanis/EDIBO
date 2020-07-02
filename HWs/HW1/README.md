@@ -26,8 +26,16 @@ Uzdevuma apraksts:
 
 [DZone teksts par Using Python Pandas for Log Analysis](https://dzone.com/articles/using-python-pandas-for-log-analysis)
 
-
 [Python kā atrast dir un importēt .csv failu](https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/)
+
+![https://shanelynnwebsite-mid9n9g1q9y8tt.netdna-ssl.com/wp-content/uploads/2018/07/absolute_and_relative_file_paths-e1531059691430.jpg](https://shanelynnwebsite-mid9n9g1q9y8tt.netdna-ssl.com/wp-content/uploads/2018/07/absolute_and_relative_file_paths-e1531059691430.jpg)
+
+Source: https://shanelynnwebsite-mid9n9g1q9y8tt.netdna-ssl.com/wp-content/uploads/2018/07/absolute_and_relative_file_paths-e1531059691430.jpg
+
+**Ja nepieciešams mainīt dir:**
+
+[Sīkāk par ~cd Downloads](https://askubuntu.com/questions/262674/how-do-i-cd-into-a-directory-in-the-home-folder)
+
 
 Nav skaidrs:
 
