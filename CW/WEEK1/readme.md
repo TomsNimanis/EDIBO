@@ -1,17 +1,21 @@
 Open Terminal
 Ctrl + alt + t 
 
+
 Firefox & 
 ‘&’ lai turpinātu komunicēt ar terminālu
 
+
 Ctrl + L  Terminal Clear
 
+
 uz Mac cmd + L nodzēš iepriekšejo līniju
+
 
 exit vai ctrl + D
 
 
-Ubuntu 18.04.3 LTS
+Klasēs tiek lietots Ubuntu 18.04.3 LTS
 
 pwd - shows directory (print working directory)
 clear - nodzēš ekrānu
@@ -49,7 +53,7 @@ Mājas darbs ir WSL + windows terminal
 
 Windows 10 20.04 versija tad pieejams WSL 2.0
 
-HW bit operācijas / bitwise operations https://en.wikipedia.org/wiki/Bitwise_operation 
+**HW bit operācijas / bitwise operations https://en.wikipedia.org/wiki/Bitwise_operation **
 
 Python
 
@@ -75,11 +79,10 @@ echo $((a+b)) - ((expressions))  starp diviem skaitļiem
 
 [Paraugs](https://stackoverflow.com/questions/4750763/how-do-i-echo-a-sum-of-a-variable-and-a-number)
 
-cat a.txt
-head a.txt
-tail a.txt
-
-ls -l *.txt
+>cat a.txt
+>head a.txt
+>tail a.txt
+>ls -l *.txt
 ￼
 
 ![Image example for ls](https://i.imgur.com/JFjl4fJ.png)
