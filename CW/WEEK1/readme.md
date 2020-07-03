@@ -106,6 +106,9 @@ Windows 10 20.04 versija tad pieejams WSL 2.0
 | << | left shift | The left operand is moved to the left by the # of bits specified by the right operand|
 | >> | right shift | The right operand is moved to the left by the # of bits specified by the right operand|
 
+**true = 1**
+**false = 0**
+
 Ja tev ir micorcontroller chips zirneklītis, tad vienā pusē tas ir 1 un otrā pusē 0. Teiksim zirneklītim ir 4 kājas.  
 
 | Zirneklīša kreisās kājas | Zirneklīša labās kājas |
