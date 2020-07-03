@@ -22,6 +22,8 @@ Klasēs tiek lietots Ubuntu 18.04.3 LTS
 pwd - shows directory (print working directory)
 clear - nodzēš ekrānu
 
+### Darbs ar 'Failu sistēmu'
+
 ls - list contents
 
 ls .
@@ -86,6 +88,35 @@ Line break ir double spacebar
 ￼
 
 ![Image example for ls](https://i.imgur.com/JFjl4fJ.png)
+
+###Noderīgi paņēmieni
+
+echo $0 - noskaidro kāds shell tiek lietots
+Ctrl + Alt + T - jauns Terminālis
+Ctrl + Shift + T - jauns Tab
+Ctrl + L - notīra ekrānu
+
+ls -l - saraksts alfabētiskā secībā
+ls -tl - saraksts pēc last tiem modified
+
+#day2-
+pwd, ls -cl, cd, mkdir
+cat, tail, wc
+date, history
+
+#day3
+nano
+
+Izmantot 'TAB' lai pabeigtu daļēji uzrakstītas komandas
+man command_name (quit with Q) - var noskaidrot par specifisko komandu
+command_name -key(s) argument(s) - pareiza syntax 
+command_name -key1 -key2 argument(s)
+
+
+
+
+
+
 
 ## Notes
 
