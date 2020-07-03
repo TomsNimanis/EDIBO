@@ -45,10 +45,7 @@ ls | head -n 3| wc -l
 
 [Head command options linux](https://www.geeksforgeeks.org/head-command-linux-examples/)
 
-cd - change directory ‘cd desktop’
-cd .. - nākt atpakaļ
 
-cd / TAB. TAB - parāda opcijas uz kurieni var nomainīt
 
 
 mkdir - izveidot jaunu folderi ‘mkdir 428’
@@ -89,8 +86,9 @@ Line break ir double spacebar
 
 ![Image example for ls](https://i.imgur.com/JFjl4fJ.png)
 
-###Noderīgi paņēmieni
+###Noderīgi paņēmieni  
 
+#day1  
 echo $0 - noskaidro kāds shell tiek lietots
 Ctrl + Alt + T - jauns Terminālis
 Ctrl + Shift + T - jauns Tab
@@ -99,18 +97,72 @@ Ctrl + L - notīra ekrānu
 ls -l - saraksts alfabētiskā secībā
 ls -tl - saraksts pēc last tiem modified
 
-#day2-
+#day2  
 pwd, ls -cl, cd, mkdir
 cat, tail, wc
 date, history
+t - time
+l - list
+a - all/abc
 
-#day3
+#day3  
 nano
+nano text1.txt - atver failu via uztaisa jaunu failu ar šādu nosaukumu
+rwx - read write execute
+drwxr-r--r-- ir samnieka tiesības, saimnieka grupas tiesības un visas pārējās tiesības (d ir directory)
+sh zsh bash - dažādi shell  
+
+**/** home/user/abc - pirmais '/'ir root iekš linux
+**cd** /home/user/abc - cd ir root iekš win  
+
+cd name_of_directory - change directory ‘cd desktop’
+cd - bez argumenta ir aiziet mājās
+cd .. - nākt atpakaļ
+cd . - iet uz priekšu
+
+cd / TAB TAB - parāda opcijas uz kurieni var nomainīt
+
+cp - copy
+
+cp ../abc.txt ../ABC/abc2.txt - kopē no iepriekšējās dir uz ABCls 
+
+
+Adreses - absolute (/), relative (. , .. , ~)
+
 
 Izmantot 'TAB' lai pabeigtu daļēji uzrakstītas komandas
 man command_name (quit with Q) - var noskaidrot par specifisko komandu
 command_name -key(s) argument(s) - pareiza syntax 
 command_name -key1 -key2 argument(s)
+
+1 byte = 8 bits (0/1 - 2 states) => unique codes 2^8 = 256
+Mājās apskatīties ASCII table
+![http://www.ecowin.org/ascii.htm](http://www.ecowin.org/ascii.htm)
+
+hexdump -C abc.txt - 
+![hexdump komandas output](https://i.imgur.com/1jQcjud.png)
+
+xxd -b abc1.txt -  attēlo binārā kodā  
+
+![xxd output](https://i.imgur.com/PwtbPMR.png)
+
+whereis ls - parāda, kur ir atrodams ls
+*komandu apraksti un tiek meklēti failu ceļos (zem &PATH)*
+
+echo $PATH
+
+PATH=$path:~ -papildina path ar 
+chmod 740 - pielikt permissions
+
+
+Lai darbinātu komandu, tai jābīut atrodamai un izpildāmai zem permissons RWX
+
+
+
+###HW Palasīt Bin to DEC metodes, DEC to BIN, BIN to HEX, HEX to BIN, HEX to DEC,
+
+
+
 
 
 
@@ -137,8 +189,10 @@ Windows 10 20.04 versija tad pieejams WSL 2.0
 | << | left shift | The left operand is moved to the left by the # of bits specified by the right operand|
 | >> | right shift | The right operand is moved to the left by the # of bits specified by the right operand|
 
+  
 **true = 1**
-**false = 0**
+**false = 0**  
+
 
 Ja tev ir micorcontroller chips zirneklītis, tad vienā pusē tas ir 1 un otrā pusē 0. Teiksim zirneklītim ir 4 kājas.  
 
@@ -152,5 +206,18 @@ Ja tev ir micorcontroller chips zirneklītis, tad vienā pusē tas ir 1 un otrā
 jeb 1001 pret 0110, bet ja teiksim tu vēlies 10**0**1 pārvērst, tu nevari vienkārši uzlikt to kā 10**1**0, un pretim 01**0**0, jo tie var būt mainīgi, līdz ar to tiek izmantotie Bitwise operanti.
 
 ![https://coolcapengineer.files.wordpress.com/2012/07/port.jpg](https://coolcapengineer.files.wordpress.com/2012/07/port.jpg)
+
+  
+  
+( | )OR operation - is setBit operand
+![Snippet no YT video https://i.imgur.com/U0v2W51.jpg](https://i.imgur.com/U0v2W51.jpg)
+
+Augšējā rinda ir PortB
+Otrā rinda ir MASK
+Trešā rinda ir Result
+
+PortB | = 0b0001 //operants OR uzstāda bitu uz 1. **0b** priekšā pasaka, ka ir binārs.  
+
+( ^ )XOR operation - strikts OR. Nedrīkst būt abi, jābūt tikai vienā pusē 1.
 
 
