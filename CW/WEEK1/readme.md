@@ -86,9 +86,9 @@ Line break ir double spacebar
 
 ![Image example for ls](https://i.imgur.com/JFjl4fJ.png)
 
-###Noderīgi paņēmieni  
+### Noderīgi paņēmieni  
 
-#day1  
+# day1  
 echo $0 - noskaidro kāds shell tiek lietots
 Ctrl + Alt + T - jauns Terminālis
 Ctrl + Shift + T - jauns Tab
@@ -97,7 +97,7 @@ Ctrl + L - notīra ekrānu
 ls -l - saraksts alfabētiskā secībā
 ls -tl - saraksts pēc last tiem modified
 
-#day2  
+# day2  
 pwd, ls -cl, cd, mkdir
 cat, tail, wc
 date, history
@@ -105,12 +105,18 @@ t - time
 l - list
 a - all/abc
 
-#day3  
+# day3  
 nano
 nano text1.txt - atver failu via uztaisa jaunu failu ar šādu nosaukumu
 rwx - read write execute
 drwxr-r--r-- ir samnieka tiesības, saimnieka grupas tiesības un visas pārējās tiesības (d ir directory)
 sh zsh bash - dažādi shell  
+
+
+echo $0 - nosaka bash
+echo $USER - mainīgos pēc $ jāraksta ar lielajiem
+echo $HOME - 
+cd $HOME - 
 
 **/** home/user/abc - pirmais '/'ir root iekš linux
 **cd** /home/user/abc - cd ir root iekš win  
@@ -119,6 +125,7 @@ cd name_of_directory - change directory ‘cd desktop’
 cd - bez argumenta ir aiziet mājās
 cd .. - nākt atpakaļ
 cd . - iet uz priekšu
+cd ../../ - iet atpakaļ.
 
 cd / TAB TAB - parāda opcijas uz kurieni var nomainīt
 
@@ -126,9 +133,9 @@ cp - copy
 
 cp ../abc.txt ../ABC/abc2.txt - kopē no iepriekšējās dir uz ABCls 
 
-
 Adreses - absolute (/), relative (. , .. , ~)
 
+PS1="$ " - nomaina PROMPT simbolu
 
 Izmantot 'TAB' lai pabeigtu daļēji uzrakstītas komandas
 man command_name (quit with Q) - var noskaidrot par specifisko komandu
@@ -154,20 +161,42 @@ echo $PATH
 PATH=$path:~ -papildina path ar 
 chmod 740 - pielikt permissions
 
+time ./01.sh - palaist ar ms
 
 Lai darbinātu komandu, tai jābīut atrodamai un izpildāmai zem permissons RWX
 
 
 
-###HW Palasīt Bin to DEC metodes, DEC to BIN, BIN to HEX, HEX to BIN, HEX to DEC,
+## For loop in bash
+
+for i in {0..5}; do echo "$i"; done
+for i in {0..5}; do echo "'date'"; done ###ar command
+for i in {0..5}; do echo "$i $((i*i))"; done
+for i in {0..5}; do echo "$i $((i*i)) $((i*i*i*))"; done
+
+
+### HW Palasīt Bin to DEC metodes, DEC to BIN, BIN to HEX, HEX to BIN, HEX to DEC,
 
 
 
 
 
+# VIM komandas  
+Esc -> : -> wq! -> [Enter]
+i = insert
+a = append
+x = delete selected character
 
+d x2= delete line
+shift + v - iezīmēt
+y - copy
+yy - cut
+p - paste
 
+g x2= sākums
+shift+g = beigas
 
+/ - find
 
 
 ## Notes
