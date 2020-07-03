@@ -216,8 +216,20 @@ Augšējā rinda ir PortB
 Otrā rinda ir MASK
 Trešā rinda ir Result
 
-PortB | = 0b0001 //operants OR uzstāda bitu uz 1. **0b** priekšā pasaka, ka ir binārs.  
+PortB| = 0b0001 //operants OR uzstāda bitu uz 1. **0b** priekšā pasaka, ka ir binārs.  Skaitļi pēc 0b ir MASK.
 
-( ^ )XOR operation - strikts OR. Nedrīkst būt abi, jābūt tikai vienā pusē 1.
+( ^ )XOR operation - strikts OR. Nedrīkst būt abi, jābūt tikai vienā pusē 1. Pilda **FLIP/TOGGLE** bit funkciju.
+
+![XOR](https://i.imgur.com/mP2Eybe.jpg)
+
+PortB^ = 0b0010  
+
+( & )AND operation - 
+
+( ~ )NOT operation - Paņem pilnīgi visus bitus un apgriež otrādāk. Bet lieliski strādā kopā ar ( & ) operantu.
+0011 = 1100
+
+PortB(0111)
+PortB &=~(0b0010) // vispirms izpilda ( ~ ) komandu, un tad tās rezultāts tiks apstrādāts ar ( & )
 
 
