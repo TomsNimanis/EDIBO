@@ -2,4 +2,5 @@
 git config --global user.email toms.nimanis@gmail.com
 git add .
 git commit -m "20200703_16_25"
+git pull
 git push origin master
