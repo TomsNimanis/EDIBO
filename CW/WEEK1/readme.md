@@ -34,6 +34,8 @@ ls /  - list home directory.
 ls -l 	-rāda ,kad izveidots fails/dir
 ls -l ABC - rāda,kas konkrēti atrodajas tajā izvēlētajā folderī
 
+ls -l 'whereis vim' - atrod kur ir vim un parāda sarakstā
+
 ls /home/ - uzrāda visu kas ir iekšā
 
 ls | head - scroll uz augšu top 10
