@@ -123,6 +123,8 @@ cd $HOME -
 **/** home/user/abc - pirmais '/'ir root iekš linux
 **cd** /home/user/abc - cd ir root iekš win  
 
+df - command displays the information of device name, total blocks, total disk space, used disk df -l
+
 cd name_of_directory - change directory ‘cd desktop’
 cd - bez argumenta ir aiziet mājās
 cd .. - nākt atpakaļ
