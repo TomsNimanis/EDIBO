@@ -126,6 +126,7 @@ cd - bez argumenta ir aiziet mājās
 cd .. - nākt atpakaļ
 cd . - iet uz priekšu
 cd ../../ - iet atpakaļ.
+'cd -' - staigā šurpu turpu starp divām vietām
 
 cd / TAB TAB - parāda opcijas uz kurieni var nomainīt
 
