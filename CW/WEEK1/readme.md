@@ -149,7 +149,7 @@ command_name -key1 -key2 argument(s)
 
 1 byte = 8 bits (0/1 - 2 states) => unique codes 2^8 = 256
 Mājās apskatīties ASCII table
-![http://www.ecowin.org/ascii.htm](http://www.ecowin.org/ascii.htm)
+![http://www.ecowin.org/ascii.htm](http://www.ecowin.org/aulas/resources/tables/asciitable.jpg)
 
 hexdump -C abc.txt - 
 ![hexdump komandas output](https://i.imgur.com/1jQcjud.png)
