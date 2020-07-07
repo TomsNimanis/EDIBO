@@ -174,11 +174,11 @@ Lai darbinātu komandu, tai jābīut atrodamai un izpildāmai zem permissons RWX
 
 ## For loop in bash
 
-for i in {0..5}; do echo "$i"; done
-for i in {0..5}; do echo "'date'"; done ###ar command
-for i in {0..5}; do echo "$i $((i*i))"; done
-for i in {0..5}; do echo "$i $((i*i)) $((i*i*i*))"; done
-
+>for i in {0..5}; do echo "$i"; done  
+for i in {0..5}; do echo "'date'"; done ###ar command  
+for i in {0..5}; do echo "$i $((i*i))"; done  
+for i in {0..5}; do echo "$i $((i*i)) $((i*i*i*))"; done  
+  
 
 ### HW Palasīt Bin to DEC metodes, DEC to BIN, BIN to HEX, HEX to BIN, HEX to DEC,
 
