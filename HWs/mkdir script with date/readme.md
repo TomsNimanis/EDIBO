@@ -1,9 +1,7 @@
 >#! /bin/bash   
-#Skripts ar nosaukumu nf.sh (New Folder)  
-  
-cd  
+#Skripts ar nosaukumu nf.sh (New Folder)   
+cd   
 if [ ! -d "$(date +"%Y%d%m")" ]  
-  
 then  
 mkdir "$(date +"%Y%d%m")" && cd "$_"  
 echo "Tika izveidota mape ar nosaukumu "$(date +"%Y%d%m")",kurā jūs tagad atrodaties"  
@@ -17,11 +15,9 @@ fi
 \# pievienojot šo līniju  
 \#   . ~/bin/nf.sh  
 \#  
-  
 function nf() {  
 cd   
 if [ ! -d "$(date +"%Y%d%m")" ]  
-   
 then    
 mkdir "$(date +"%Y%d%m")" && cd "$\_"    
 echo "Tika izveidota mape ar nosaukumu "$(date +"%Y%d%m")",kurā jūs tagad atrodaties"    
