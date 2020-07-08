@@ -1,3 +1,13 @@
+# HW
+mkdir 20200708
+
+'date'
+
+Izveidot jaunu folderīti pēc USA date formāta izmantojot skriptu,vai komandu
+kā arī apsaktīties Python sadaļu
+
+----
+
 Python Fibonacci sekvence
 Bubble sort metode tiks apskatīta
 
