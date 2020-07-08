@@ -127,3 +127,20 @@ merge
 Algorithms
 dec2bin
 bubble sort
+
+python default var nomainīt
+
+
+'=' //piešķiršans operācija
+vars() //pir funkcija,kas parāda visus pieejamos un jaunus pieliktos
+a=10
+c = 'texts'
+
+type(a) - int
+type(b) - float
+type(c) - str
+
+exit()
+ 
+# ipython komandas
+a.\_doc_
