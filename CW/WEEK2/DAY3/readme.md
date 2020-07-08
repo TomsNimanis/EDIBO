@@ -48,12 +48,9 @@ Izmantojot **read**
 echo "Enter the number"
 read n
 
-##### HW
-mkdir 20200708
 
-'date'
 
-Izveidot jaunu folderīti pēc USA date formāta izmantojot skriptu,vai komandu
+
 
 | DEC | BIN | HEX |
 | --- | --- | --- |
@@ -141,6 +138,12 @@ type(b) - float
 type(c) - str
 
 exit()
+
+Komanda iekš bash ir- idle &
  
 # ipython komandas
-a.\_doc_
+a.\_\_doc__
+
+print(a.\_\_doc__)
+
+\n darbbibas simbols jauna linija
