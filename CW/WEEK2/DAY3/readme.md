@@ -121,7 +121,7 @@ merge
 
 # Python Uzdevumi
 
-[Introduction](https://www.py4e.com/lessons)
+[Introduction](https://www.py4e.com/lessons)  
 [Work with files](https://www.py4e.com/lessons/files)
 
 Algorithms
