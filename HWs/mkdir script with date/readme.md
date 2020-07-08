@@ -8,12 +8,12 @@ echo "Tika izveidota mape ar nosaukumu "$(date +"%Y%d%m")",kurā jūs tagad atro
 fi  
 
   
-**Skripts ir jāpalaiž ar . nf.sh ,lai netiktu aktivižet jauns child shell un tiktu izpildīta '$$ CD "$\_" var arī izveidot funkciju**  
+**Skripts ir jāpalaiž ar . nf.sh ,lai netiktu aktivizēts jauns child shell un tiktu izpildīta '$$ CD "$\_". Kā arī var izveidot funkciju**  
   
 >#!/bin/bash  
 \#  Šo skriptu vajag palaist ar komandas palidzibu caur .bashrc,  
 \# pievienojot šo līniju  
-\#   . ~/bin/nf.sh  
+\#   . /home/jokimazi/nf.sh  
 \#  
 function nf() {  
 cd   
