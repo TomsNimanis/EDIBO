@@ -68,4 +68,38 @@ Izveidot jaunu folderīti pēc USA date formāta izmantojot skriptu,vai komandu
 | 12 | 1100 | C |
 | 13 | 1101 | D | 
 | 14 | 1110 | E |
-| 15 | 1111 | F |
+| 15 | 1111 | F |  
+
+
+  
+  Atdot argumentu komanda skriptam 
+  >#! /bin/bash  
+  echo $0   
+
+tad palaižot skriptu
+
+>$ ./05.sh RTU  
+
+arguments tiek atdots failā kā mainīgais un termināli printē
+
+>RTU  
+
+Var arī izmantot vairākus mainīgos
+> #! /bin/bash  
+echo $1 $2 $3  
+
+tad atdodot vairākus argumentus
+>$ ./05.sh RTU 20 DDD  
+RTU 20 DDD  
+
+ko tālāk var definēt
+
+> #! /bin/bash  
+echo $1 $2 $3  
+kopa=$1+2  
+  
+echo $kopa  
+
+
+
+
