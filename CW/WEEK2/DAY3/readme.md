@@ -101,7 +101,7 @@ kopa=$1+2
 echo $kopa  
 
 
-##### GitHub uzdevumi
+# GitHub uzdevumi
 
 repository
 branch
