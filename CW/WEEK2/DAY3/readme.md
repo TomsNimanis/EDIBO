@@ -1,6 +1,10 @@
 Python Fibonacci sekvence
 Bubble sort metode tiks apskatīta
 
+whoami - komanda
+echo $0
+
+
 wget - komandas lietojums
 
 curl - atsūta mājaslapas saturu
@@ -109,6 +113,17 @@ pull request
 merge
 [Tutorial for GUI](https://guides.github.com/activities/hello-world/)
 
+[Tutorial for Terminal](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
+[Git Handbook](https://guides.github.com/introduction/git-handbook/)
 
+[Git Invite collaborators](https://help.github.jp/enterprise/2.11/user/articles/inviting-collaborators-to-a-personal-repository/)
 
+# Python Uzdevumi
+
+[Introduction](https://www.py4e.com/lessons)
+[Work with files](https://www.py4e.com/lessons/files)
+
+Algorithms
+dec2bin
+bubble sort
