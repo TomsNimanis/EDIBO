@@ -24,6 +24,6 @@ echo "Tika izveidota mape ar nosaukumu "$(date +"%Y%d%m")",kurā jūs tagad atro
 fi    
 }  
  
-**Alias iekš .bashrc 
+**Alias iekš .bashrc**
  
 >alias nf=". nf.sh"  
