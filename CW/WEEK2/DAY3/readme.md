@@ -70,7 +70,7 @@ Izveidot jaunu folderīti pēc USA date formāta izmantojot skriptu,vai komandu
 | 14 | 1110 | E |
 | 15 | 1111 | F |  
 
-
+### Argumentu atdošana skriptam kā mainīgais
   
   Atdot argumentu komanda skriptam 
   >#! /bin/bash  
