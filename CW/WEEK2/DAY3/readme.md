@@ -101,5 +101,14 @@ kopa=$1+2
 echo $kopa  
 
 
+##### GitHub uzdevumi
+
+repository
+branch
+pull request
+merge
+[Tutorial for GUI](https://guides.github.com/activities/hello-world/)
+
+
 
 
