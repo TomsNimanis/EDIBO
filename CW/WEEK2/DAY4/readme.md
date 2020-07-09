@@ -2,7 +2,8 @@
 uzlikt git bash uz savas ierīces
 https://www.udemy.com/course/git-bash/
 
-Iemācīties no galvas bināro skalu.
+Iemācīties no galvas bināro skalu. Un HEX uz DEC konversijām
+Apskatītites darbības ar python dictionary
 
 | DEC | BIN | HEX |
 | --- | --- | --- |
@@ -34,3 +35,75 @@ hexdump  a.dat
 hexdump a.dat // ir dažādas atslēgas -c, -b, utt.
 
 echo a | hexdump -C //var palaist pa PIPE, arī citas -key
+  
+curl google.com // curl output apskats  
+
+
+
+imaginary numbers kā piemēram z=4+3j
+
+# Python komandas
+
+pievienot janu vars()  
+a=123  
+  
+Kā izdzēst mainīgo?  
+del a  
+
+Teksti vienmēr ""
+ 
+Ja vajag print() ar "" vai '', tad tekstu ieliek pretējās pēdiņās  
+>print('"Hello World"')  
+
+type(s) //pārbauda mainīgā tipu  
+
+s2 = str(s) //konvertē uz str, integer  
+
+ja lieto dubulto '//', tad ir darbība ar veseliem skaitļiem  
+
+Kāpināšana ir ar ' ** '
+
+Ja mainīgais ir 's''
+s. [TAB]  //parāda visas iebūvētās metodes.  
+s.count(a) //saskaitas visus a  
+
+ja vajag lai saskaita visus:  
+>from collections import Counter  
+Counter(s)  
+
+Lai sakārtotu secīgi ar visbiežāk lietoto.
+>x = Counter(s)  
+x.most_common()  
+
+c = (11, 22, 77, 11) //Tips ir tuple jeb skaitļu komplekts
+dir(c)  // parāda iespējamās comandas ar c
+
+c.index.\_\_doc__ //pilda dokumentācijas funkciju par šo failu.
+
+c.index(11) //parāda kurā vietā ir 11. 
+c.index(11, 1) // parāda kur atrst nākošo 11
+ 
+
+var izmantos arī []
+c[2] / kā arī negatīvas vērtības
+c[-2] /skaitas no beigām
+
+c = [22, 3.14, 'EDIBO'] //definē sarakstu
+
+Pieejamās komandas sarakstam ir ar c. TAB  
+
+c.sort(reverse=True)  
+c.sort()  
+
+c.append() // pieliek sarakstā klāt beigās  
+c = [] //izveidot tukšu listu  
+c.pop() //izmet ārā
+
+d = {} //izveidot dictionary  
+d = {'abols':'apple'}  
+>d['abols']  
+'apple'  
+  
+d.update({"bumbieris":'birne'}) //pievieno
+d.pop()
+'
