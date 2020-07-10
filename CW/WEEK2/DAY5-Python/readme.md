@@ -61,3 +61,32 @@ In [252]: s = """
   
 t = "Summa = %s, valūta = %s"%(2, 'EUR') // pievieno mainīgos stringā  
  
+ 
+ ###Spam skripts
+ 
+ 
+In [296]: s = """  
+     ...: Godājamais %s,  
+     ...: Jums ir pienācis naudas pārvedums  
+     ...: ar vērtību %d EUR  
+     ...: Lai saņemtu naudu, atsūtiet  
+     ...: īsziņu uz tlf. numuru %s  
+     ...:   
+     ...: Cieņā,  
+     ...:         atraitne  
+     ...: """%('Jāni', 1000, '+371 20136055') #aizpilda visus mainīgos  
+       
+  
+In [297]: print(s)  
+  
+Godājamais Jāni,  
+Jums ir pienācis naudas pārvedums  
+ar vērtību 1000 EUR  
+Lai saņemtu naudu, atsūtiet  
+īsziņu uz tlf. numuru +371 20136055  
+  
+Cieņā,  
+        atraitne  
+
+
+ 
