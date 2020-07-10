@@ -33,6 +33,18 @@ for i in range(3,10): print(i)  // printē skaitļus no 3 līdz 10, ja ievada ra
 Ja vienā rindā jāraksta, vairākas rindas, tad 
 >for i in range(3,10): print(i); print('a')
   
+   
+   
+ Paskāla trijstūris. //bet mans kods darbojas tikai līdz bāzes 11 pakāpei 4.
+ 
+>In [217]: for i in range(5):  
+     ...:     print(" "*(4-i), " ".join(str(11**i)))  
+     ...:       
+     1  
+    1 1  
+   1 2 1  
+  1 3 3 1  
+ 1 4 6 4 1  
   
 
 
