@@ -89,4 +89,4 @@ Cieņā,
         atraitne  
 
 
- 
+ [Spam skripts ar defaultajiem fill mainīgajiem](https://pastebin.com/Pk7BjWaN)
