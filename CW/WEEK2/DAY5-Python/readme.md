@@ -48,5 +48,16 @@ Ja vienā rindā jāraksta, vairākas rindas, tad
   
 
 
-
+In [252]: s = """  
+     ...: Godājamais x,  
+     ...: Jums ir pienācis naudas pārvedums  
+     ...: ar vērtību y EUR  
+     ...: Lai saņemtu naudu, atsūtiet  
+     ...: īsziņu uz tlf. numuru z  
+     ...:   
+     ...: Cieņā,  
+     ...:         atraitne  
+     ...: """  
+  
+t = "Summa = %s, valūta = %s"%(2, 'EUR') // pievieno mainīgos stringā  
  
