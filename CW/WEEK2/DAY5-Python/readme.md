@@ -1,3 +1,14 @@
+
+#HW
+
+Saņemam a.dat sagatavi
+Mēs pieliekam vērtības un izveidojam b.dat(satur aizpildāmos, kas aizies tālāk.
+
+c.dat ir rezultāts
+
+
+
+
 # Darbs ar Python un google collabs
 
 [Saite uz google collab](https://colab.research.google.com/drive/1ajQTMctVeOEALDnyUK5j_8E4yJioeOih)
@@ -90,3 +101,13 @@ Cieņā,
 
 
  [Spam skripts ar defaultajiem fill mainīgajiem](https://pastebin.com/Pk7BjWaN)
+ 
+ 
+ f = open("a.dat", "") //tiešibas, r,w, a
+f.write()  
+f.tell()  
+f.seek()  
+f.close()  
+
+
+ 
