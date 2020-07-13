@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+
 		<title>Mans chart!</title>
+		
+		<!-- External CSS atrodas ~/www/styles.css -->
 	
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		
+		<!--Internal CSS atrodas iekš style tag-->
+
 	<style>
+
 	body {
 		text-align: justify;
 	}
@@ -30,12 +42,17 @@
 		height: 100%;
 		object-fit: cover;
 	}
+	
+	
+	
 	</style>
 
 	</head>
 
 	<body>
-		<h2>Unordered List</h2>
+		<div id="linki">	
+		<!-- Inline CSS atrodas iekš h2 tag-->
+		<h2 style="color:blue;">Unordered List</h2>
 		<ul>
 			<li>Kafija</li>
 			<li>Tēja</li>
@@ -56,10 +73,10 @@
 			<dt>Piens</dt>
 			<dd>-Balts, auksts dzēriens</dd>
 		</dl>
-
+		</div linki>
 		<h2>Linki</h2>
 
-		<a href="mailto:toms.nimanis@gmail.com">Sūtīt Tomam e-pastu</a>
+		<a href="mailto:toms.nimanis@neteiksu.com">Sūtīt Tomam e-pastu</a>
 		<br>
 		<a href="https://www.google.lv/" title="Spied mani lai ietuuz google">Apmeklē google.lv</a>
 		
@@ -98,8 +115,10 @@
 		<svg width="100" height="100">
 			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
 		</svg>
+		<br>
+		<p>Šis teksta paragrāfs tiek stilizēts ar external CSS palīdzību</p>
 
-	
+
 	</body>
 
 </html>
