@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# == 1]
+if [ $# == 1 ]
 then
 git config --global user.email toms.nimanis@gmail.com
 git add .
