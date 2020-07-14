@@ -1,0 +1,1 @@
+document.write("<h2>Unordered List</h2><ul><li>Kafija</li><li>Tēja</li><li>Piens</li></ul><h2>Ordered list</h2><ol><li>Kafija</li><li>Tēja</li><li>Piens</li></ol><h2>Descriptive list</h2><dl><dt>Kafija</dt><dd>-Melns, karsts dzēriens</dd><dt>Piens</dt><dd>-Balts, auksts dzēriens</dd></dl>");
