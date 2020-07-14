@@ -32,3 +32,5 @@ Graphic(s) - SVG
 ssh local_IP // var pieslēgties tīklā pie cita datora  
 
 scp user@10.152.16.30:~/EDIBO/Day9_Day10/Day9.html ./ //pārkopē no servera ierīces fails
+
+
