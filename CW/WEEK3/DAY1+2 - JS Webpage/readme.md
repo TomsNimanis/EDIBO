@@ -33,4 +33,14 @@ ssh local_IP // var pieslēgties tīklā pie cita datora
 
 scp user@10.152.16.30:~/EDIBO/Day9_Day10/Day9.html ./ //pārkopē no servera ierīces fails
 
+# DotNet
+
+dotnet new console -o MyConsoleApp //sagatavo vidi
+tree MyConsoleApp // parāda directory tree
+dotnet build
+dotnet run
+Console.WriteLine($"Hello World! {txt} Class"); //interpolation
+Console.WriteLine($"Hello World!Class "+txt); //extrapolation
+dotnet watch run // labi prieks webapp,lai var redzet izmainas
+
 
