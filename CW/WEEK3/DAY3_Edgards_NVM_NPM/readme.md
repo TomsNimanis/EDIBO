@@ -65,4 +65,16 @@ Svarīgi ir mapīte src/app/
 
 [Materiali Angular](https://material.angular.io/components/categories)  
   
+# Viktors  
+
+. code
+
+Jauniem failiem zem launchsettings.js Izdzēst https
+
+un
+
+zem startup.cs izkomentēt line 39 app.UseHttpsRedirection
+
+curl http://localhost:5000/weatherforecast | json_pp
+
 

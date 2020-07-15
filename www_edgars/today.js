@@ -9,11 +9,17 @@
         class TodayDateComponent extends HTMLElement {
                 constructor(){
                         super();
-                        setInterval(() => {
-                        this.innerText=new Date();
-                        }, 1000);
-                        }
-                }       
+                        fetch('link')
+                                .then(j=>j.json())
+                                .then(text=>{this.innerText = JSON.stringify(text);
+                                        
+                        // setInterval(() => {
+                //        this.innerText=new Date();
+                //         }, 1000);
+                //         }
+                })
+        } 
+        }      
 
         const comp  = customElements.define('today-date', TodayDateComponent);
 
