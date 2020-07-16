@@ -15,7 +15,8 @@ caniuse.com // pārbaudīt vai strādās
 HybridApps // spotify iekš smart tv  
 Polyfills // kā var uzrakstīt kaut ko,kas arī strādās vecākā broswerī.  
 webcomponent frameworks // Profile Image piemērs, ka tu strādā tikai ar 1 elementu,kas atkārtojas. Raksti savus tagus. <select>  
-w3c validator // pārbauda Markup Validation  
+   
+w3c validator // pārbauda Markup Validation   
 stateofjs.com  
 singlepage application SPA// google search bar, facebook pull info ko vajag.  
 ecmascript //standarts implementācijas caur JavaScript  
@@ -53,15 +54,15 @@ RFid
   
 viss.gov.lv  
 programmers challenges  
-webstorm esot ērtāk kā visual studio code bet pa maksu
+webstorm esot ērtāk kā visual studio code bet pa maksu. 
   
-ng new //Lai palaistu jaunu Angular
-tad aiziet uz izveidotot mapiti piemeram HelloWorld  
+ng new //Lai palaistu jaunu Angular. 
+tad aiziet uz izveidotot mapiti piemeram HelloWorld    
 
-ng add @angular/material  //pievieno material
+ng add @angular/material  //pievieno material. 
  
 ng serve  
-Svarīgi ir mapīte src/app/ 
+Svarīgi ir mapīte src/app/   
 
 [Materiali Angular](https://material.angular.io/components/categories)  
   
@@ -69,12 +70,12 @@ Svarīgi ir mapīte src/app/
 
 . code
 
-Jauniem failiem zem launchsettings.js Izdzēst https
+Jauniem failiem zem launchsettings.js Izdzēst https.   
 
-un
+un. 
 
-zem startup.cs izkomentēt line 39 app.UseHttpsRedirection
+zem startup.cs izkomentēt line 39 app.UseHttpsRedirection. 
 
-curl http://localhost:5000/weatherforecast | json_pp
+curl http://localhost:5000/weatherforecast | json_pp. 
 
 
