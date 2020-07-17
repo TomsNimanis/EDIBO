@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="lv">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <style>
@@ -12,9 +13,9 @@
             margin-bottom: 5px;
         }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div id='visualization'>
         <div>Valūtu salīdzinājums</div>
@@ -28,16 +29,80 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.min.js"></script>
     <script>
-      $(function() {
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
 
-        var gbp =
-        [[2018,1.64],[2019,1.22],[2020,1.12]];
+        // create initial empty chart
+        var ctx_live = document.getElementById("mycanvas");
+        var myChart = new Chart(ctx_live, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [{
+                    data: [],
+                    borderWidth: 1,
+                    borderColor: '#00c0ef',
+                    label: 'liveCount',
+                }]
+            },
+            options: {
+                responsive: true,
+                title: {
+                    display: true,
+                    text: "Chart.js - Dynamically Update Chart Via Ajax Requests",
+                },
+                legend: {
+                    display: false
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                        }
+                    }]
+                }
+            }
+        });
 
-        var usd =
-        [[2018,1.11],[2019,1.00],[2020,1.13]];
+        // this post id drives the example data
+        var postId = 1;
 
-        var eur =
-        [[2018,1.66],[2019,1.44],[2020,1.22]];
+        // logic to get new data
+        var getData = function () {
+            $.ajax({
+                url: 'http://data.fixer.io/api/2013-12-24?access_key=d1750a6120d947dff0e645a63ca7dc06&base=EUR&symbols=USD,GBP,EUR' + postId + '/comments',
+                success: function (data) {
+                    // process your data to pull out what you plan to use to update the chart
+                    // e.g. new label and a new data point
+
+                    // add new label and data point to chart's underlying data structures
+                    myChart.data.labels.push("Post " + postId++);
+                    myChart.data.datasets[0].data.push(getRandomIntInclusive(1, 25));
+
+                    // re-render the chart
+                    myChart.update();
+                }
+            });
+        };
+
+        // get new data every 3 seconds
+        setInterval(getData, 3000);
+
+
+
+
+
+
+
+        const fixerURL = 'http://data.fixer.io/api/2013-12-24?access_key=d1750a6120d947dff0e645a63ca7dc06&base=EUR&symbols=USD,GBP,EUR'
+
+        var response
+        var gbp = [[2018, 0], [2019, 1.00], [2020, 1.13]]
+        var usd = [[2018, 0], [2019, 1.00], [2020, 1.13]]
+        var eur = [[2018, 0], [2019, 1.00], [2020, 1.13]]
 
         var source = [
             { data: gbp, show: true, color: "#E41A1C", name: "£" },
@@ -46,20 +111,38 @@
 
         ];
 
+        // fetch(fixerURL)
+        //     .then(j => j.json())
+        //     // .then(text=>{this.innerText = JSON.stringify(text)
+        //     .then(data => response = data)
+        //     .then(data => this.innerText = ("test THEN: " + response))
+        //     .then(data => console.log("test THEN: " + response))
+        //     .then(data => addToArr(gbp, 2018, response.rates.GBP))
+        //     // .then(data => gbp.push(2018, response.rates.GBP))
+        //     .then(data => console.log("TEST GBP " + gbp))
+        //     // .then(data => usd.push(2018, response.rates.USD))
+        //     .then(data => addToArr(usd, 2018, response.rates.USD))
+        //     .then(data => console.log("TEST USD " + usd))
+        //     // .then(data => eur.push(2018, response.rates.EUR))
+        //     .then(data => addToArr(eur, 2018, response.rates.EUR))
+        //     .then(data => console.log("TEST eur " + eur))
+        // // .then(data=>console.log("test THEN: "+response))
+        // console.log("test OUTER: " + gbp)
+
         var plotObj = $.plot(
             $("#chart"),
             $.map(
                 $.grep(
-                  source,
-                  function (obj) { return obj.show; }
+                    source,
+                    function (obj) { return obj.show; }
                 ),
-                function (obj) { return { data: obj.data, color: obj.color };}
+                function (obj) { return { data: obj.data, color: obj.color }; }
             )
         );
-        $.each(source, function(idx, obj) {
-            var input = $("<input>").attr("id","chk-"+idx).attr("type","checkbox");
+        $.each(source, function (idx, obj) {
+            var input = $("<input>").attr("id", "chk-" + idx).attr("type", "checkbox");
             if (obj.show) {
-                $(input).prop("checked",true);
+                $(input).prop("checked", true);
             }
             var span = $("<span>").css({
                 'background-color': obj.color,
@@ -71,7 +154,7 @@
             var label = $("<label>").addClass("checkbox").append(input).append(span).append(obj.name);
             $("#controls").append(label);
         });
-        $("input[id^='chk-']").click(function(ev) {
+        $("input[id^='chk-']").click(function (ev) {
             var idx = ev.target.id.substr(4);
             source[idx].show = !source[idx].show
             plotObj.setData(
@@ -83,8 +166,12 @@
             plotObj.draw();
         })
 
+        console.log("test OUTER LAST: " + response)
 
-      });
+
+        
+
     </script>
-  </body>
+</body>
+
 </html>

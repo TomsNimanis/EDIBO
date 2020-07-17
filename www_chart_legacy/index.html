@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        label {
+            cursor: pointer;
+            display: block;
+            padding-left: 20px;
+            min-height: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='visualization'>
+        <div>Valūtu salīdzinājums</div>
+        <div id='chart' style="width:500px;height:333px;float:left;"></div>
+        <div id='controls' style="float:left;">
+            <p>Izvēlies valūtas</p>
+        </div>
+    </div>
+
+    <!--[if lt IE 9]><script src="js/excanvas.min.js"></script><![endif]-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.7/jquery.flot.min.js"></script>
+    <script>
+        $(function () {
+            function addToArr(arr, date, value) {
+                arr.push(date, value)
+            }  
+
+            // var gbp =
+            //     [[2018, 1.64], [2019, 1.22], [2020, 1.12]];
+
+            // var usd =
+            //     [[2018, 1.11], [2019, 1.00], [2020, 1.13]];
+
+            // var eur =
+            //     [[2018, 1.66], [2019, 1.44], [2020, 1.22]];
+
+            // var source = [
+            //     { data: gbp, show: true, color: "#E41A1C", name: "£" },
+            //     { data: eur, show: true, color: "#377EB8", name: "€" },
+            //     { data: usd, show: true, color: "#4DAF4A", name: "$" },
+
+            // ];
+            const fixerURL = 'http://data.fixer.io/api/2013-12-24?access_key=d1750a6120d947dff0e645a63ca7dc06&base=EUR&symbols=USD,GBP,EUR'
+
+            var response
+            var gbp = [[2018, 0], [2019, 1.00], [2020, 1.13]]
+            var usd = [[2018, 0], [2019, 1.00], [2020, 1.13]]
+            var eur = [[2018, 0], [2019, 1.00], [2020, 1.13]]
+
+            var source = [
+                { data: gbp, show: true, color: "#E41A1C", name: "£" },
+                { data: eur, show: true, color: "#377EB8", name: "€" },
+                { data: usd, show: true, color: "#4DAF4A", name: "$" },
+
+            ];
+
+            var plotObj = $.plot(
+                $("#chart"),
+                $.map(
+                    $.grep(
+                        source,
+                        function (obj) { return obj.show; }
+                    ),
+                    function (obj) { return { data: obj.data, color: obj.color }; }
+                )
+            );
+            $.each(source, function (idx, obj) {
+                var input = $("<input>").attr("id", "chk-" + idx).attr("type", "checkbox");
+                if (obj.show) {
+                    $(input).prop("checked", true);
+                }
+                var span = $("<span>").css({
+                    'background-color': obj.color,
+                    'display': "inline-block",
+                    'height': "0.9em",
+                    'width': "0.9em",
+                    'margin-right': "0.25em",
+                });
+                var label = $("<label>").addClass("checkbox").append(input).append(span).append(obj.name);
+                $("#controls").append(label);
+            });
+            $("input[id^='chk-']").click(function (ev) {
+                var idx = ev.target.id.substr(4);
+                source[idx].show = !source[idx].show
+                plotObj.setData(
+                    $.map(
+                        $.grep(source, function (obj) { return obj.show; }),
+                        function (obj) { return { data: obj.data, color: obj.color }; }
+                    )
+                );
+                plotObj.draw();
+            })
+
+            console.log("test OUTER LAST: " + response)
+
+
+            fetch(fixerURL)
+                .then(j => j.json())
+                // .then(text=>{this.innerText = JSON.stringify(text)
+                .then(data => response = data)
+                .then(data => this.innerText = ("test THEN: " + response))
+                .then(data => console.log("test THEN: " + response))
+                .then(data => addToArr(gbp, 2018, response.rates.GBP))
+                // .then(data => gbp.push(2018, response.rates.GBP))
+                .then(data => console.log("TEST GBP " + gbp))
+                // .then(data => usd.push(2018, response.rates.USD))
+                .then(data => addToArr(usd, 2018, response.rates.USD))
+                .then(data => console.log("TEST USD " + usd))
+                // .then(data => eur.push(2018, response.rates.EUR))
+                .then(data => addToArr(eur, 2018, response.rates.EUR))
+                .then(data => console.log("TEST eur " + eur))
+            // .then(data=>console.log("test THEN: "+response))
+            console.log("test OUTER: " + gbp)
+        });
+        
+    </script>
+</body>
+
+</html>
