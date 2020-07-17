@@ -77,5 +77,6 @@ un.
 zem startup.cs izkomentēt line 39 app.UseHttpsRedirection. 
 
 curl http://localhost:5000/weatherforecast | json_pp. 
+ 
 
 
