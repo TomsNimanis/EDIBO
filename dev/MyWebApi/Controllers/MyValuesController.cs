@@ -11,10 +11,40 @@ namespace MyWebApi.Controllers
     [Route("api/[controller]")]
     public class MyValuesController : ControllerBase
     {
+        
+        // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "Toms", "July", "2020", "EDIBO", "RTU" };
+            return new string[] { "July", "2020", "EDIBO"};
+        }
+
+        //GET api/values/5
+        [HttpGet("{id}")]
+        public ActionResult<string> GetAction(int id)
+        {
+            return "My value";
+        }
+
+        // POST api/values
+        [HttpPost]
+        public void Post([FromBody] string value)
+        {
+
+        }
+
+        // PIUT api/values/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
+        {
+
+        }
+
+        //DELETE api/values/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+
         }
     }
 }
