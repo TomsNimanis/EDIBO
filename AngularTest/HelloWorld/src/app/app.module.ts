@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import{ DataService} from './data.service';
 import{CurrencyModule} from './currency/currency.module'
+import{WeatherModule} from './weather/weather.module'
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +13,8 @@ import{CurrencyModule} from './currency/currency.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CurrencyModule
+    CurrencyModule,
+    WeatherModule,
   ],
   providers: [
     ProfileService,
