@@ -14,7 +14,9 @@ Jquery 2005 // $("H1").
 caniuse.com // pārbaudīt vai strādās  
 HybridApps // spotify iekš smart tv  
 Polyfills // kā var uzrakstīt kaut ko,kas arī strādās vecākā broswerī.  
+  
 webcomponent frameworks // Profile Image piemērs, ka tu strādā tikai ar 1 elementu,kas atkārtojas. Raksti savus tagus. <select>    
+    
    
 w3c validator // pārbauda Markup Validation.    
 stateofjs.com  
