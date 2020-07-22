@@ -54,29 +54,28 @@ RFid
   
 viss.gov.lv  
 programmers challenges  
-webstorm esot ērtāk kā visual studio code bet pa maksu. 
+webstorm esot ērtāk kā visual studio code bet pa maksu.   
   
 ng new //Lai palaistu jaunu Angular. 
 tad aiziet uz izveidotot mapiti piemeram HelloWorld    
-
-ng add @angular/material  //pievieno material. 
- 
-ng serve  
-Svarīgi ir mapīte src/app/   
-
-[Materiali Angular](https://material.angular.io/components/categories)  
   
+ng add @angular/material  //pievieno material.   
+   
+ng serve   
+Svarīgi ir mapīte src/app/   
+  
+[Materiali Angular](https://material.angular.io/components/categories)  
+    
 # Viktors  
-
-. code
-
+   
+  
 Jauniem failiem zem launchsettings.js Izdzēst https.   
-
-un. 
-
-zem startup.cs izkomentēt line 39 app.UseHttpsRedirection. 
-
-curl http://localhost:5000/weatherforecast | json_pp. 
- 
+  
+un.  
+  
+zem startup.cs izkomentēt line 39 app.UseHttpsRedirection.   
+  
+curl http://localhost:5000/weatherforecast | json_pp.   
+   
 
 
