@@ -36,8 +36,8 @@ Ci/CD // continues integration
 TypeScript // tas pats JavaScript tikai tipizēts  
 Performance vs Readability  
 Solid OOP // apskatīties Youtube, toeriju  
-
-
+  
+  
 # VisualCode  
   
 ! + TAB //index aizpilda html syntax  
