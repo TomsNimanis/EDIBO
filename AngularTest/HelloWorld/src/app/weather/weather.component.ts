@@ -9,15 +9,18 @@ import { map } from 'rxjs/operators';
 // }
 
 // interface RateData {
+//   start_at: string;
+//   base: string;
+//   end_at: string;
+//   rates: RateDateRates;
+// }
+
 interface WeatherData {
+  id: number;
   date: string;
   temperatureC: number;
   temperatureF: number;
   summary: string;
-  // start_at: string;
-  // base: string;
-  // end_at: string;
-  // rates: RateDateRates;
 }
 
 @Component({
@@ -25,17 +28,21 @@ interface WeatherData {
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.scss'],
 })
+
 export class WeatherComponent implements OnInit {
   // baseRate = 'EUR';
   // symbols = 'USD,GBP';
-  // currency: any;
-  // weatherData: any;
-  temperatures: any[];
+  // currencyData: any;
+
+  // wesatherData: any
+
   // startDate: string;
   // endDate: string;
   // rates: any[];
 
+  id: number;
 
+  temperatures: any[];
 
   constructor(private restClient: HttpClient) {}
 
@@ -49,17 +56,19 @@ export class WeatherComponent implements OnInit {
     // this.startDate = data.start_at;
     // this.endDate = data.end_at;
     // this.rates = Object.entries(data.rates)
+  //  this.temperatures=data.date;
+  //  this.temperatures=data.temperatureC;
+
+  //  this.temperatures=data.temperatureF;
+  //  this.temperatures=data.summary;
+
     this.temperatures = Object.entries(data);
-
-
-
-
-    // this.weatherData = data;
     // .map(divainiba=>({
-    //   date: divainiba[0],
-    //   temperatureC: divainiba[1],
-    //   temperatureF: divainiba[2],
-    //   summary: divainiba[3],
+    //   date: divainiba,
+    //   temperatureC: divainiba,
+    //   temperatureF: divainiba,
+    //   summary: divainiba,
+
     // }));
   }
 

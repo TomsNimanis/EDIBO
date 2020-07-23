@@ -1,25 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ProfileService} from './profile.service';
-import { AppRoutingModule } from './app-routing.module';
+import { MatSliderModule } from '@angular/material/slider';
 import { AppComponent } from './app.component';
-import{ DataService} from './data.service';
+// import { XyzComponent } from './xyz/xyz.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{CurrencyModule} from './currency/currency.module'
+import { AppRoutingModule } from './app-routing.module';
 import{WeatherModule} from './weather/weather.module'
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // XyzComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
     CurrencyModule,
+    AppRoutingModule,
     WeatherModule,
   ],
-  providers: [
-    ProfileService,
-    DataService,
-  ],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
