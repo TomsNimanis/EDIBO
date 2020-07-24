@@ -59,6 +59,7 @@ namespace TodoApi.Controllers
 
             todoItem.Name = todoItemDTO.Name;
             todoItem.IsComplete = todoItemDTO.IsComplete;
+            // todoItem.CreationTime = DateTime.Now; //pievienoju es
 
             try
             {
@@ -85,7 +86,7 @@ namespace TodoApi.Controllers
                 // UpdateTime = todoItemDTO.DateTime.Now,
             };
 
-            todoItem.CreationTime = DateTime.Now;
+            // todoItem.CreationTime = DateTime.Now;
         
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
@@ -93,11 +94,11 @@ namespace TodoApi.Controllers
             return CreatedAtAction(
                 nameof(GetTodoItem),
                 new { id = todoItem.Id,
-                 CreationTime = todoItem.CreationTime,
+                 //CreationTime = DateTime.Now,
                  },
                 ItemToDTO(todoItem));
         }
-
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTodoItem(long id)
         {
@@ -122,7 +123,9 @@ namespace TodoApi.Controllers
             {
                 Id = todoItem.Id,
                 Name = todoItem.Name,
-                IsComplete = todoItem.IsComplete
+                IsComplete = todoItem.IsComplete,
+                CreationTime = DateTime.Now,
+                UpdateTime = DateTime.Now,
             };
     }
 }

@@ -28,6 +28,8 @@
     <th>Id</th>
     <th>Name</th>
     <th>Status</th>
+    <th>Created</th>
+    <th>Updated</th>
     <th>Privacy</th>
   </thead>
   <tbody>
@@ -35,6 +37,8 @@
       <td>{{todo[1].id}}</td>
       <td>{{todo[1].name}}</td>
       <td>{{todo[1].isComplete}}</td>
+      <td>{{todo[1].creationTime | date}}</td>
+      <td>{{todo[1].updateTime | date}}</td>
       <td>{{todo[1].secret}}</td>
     </tr>
   </tbody>
