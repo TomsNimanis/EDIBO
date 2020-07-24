@@ -8,6 +8,8 @@ import{CurrencyModule} from './currency/currency.module'
 import { AppRoutingModule } from './app-routing.module';
 import{WeatherModule} from './weather/weather.module';
 import{TodoModule} from './todo/todo.module';
+import{HttpClientModule} from '@angular/common/http';
+import{ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import{TodoModule} from './todo/todo.module';
     AppRoutingModule,
     WeatherModule,
     TodoModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [ ],
   bootstrap: [AppComponent]

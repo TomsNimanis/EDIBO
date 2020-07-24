@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
 
+
 namespace TodoApi.Controllers
 {
     [Route("api/[controller]")]
@@ -74,18 +75,26 @@ namespace TodoApi.Controllers
         [HttpPost]
         public async Task<ActionResult<TodoItemDTO>> CreateTodoItem(TodoItemDTO todoItemDTO)
         {
+            
+            
             var todoItem = new TodoItem
             {
                 IsComplete = todoItemDTO.IsComplete,
-                Name = todoItemDTO.Name
+                Name = todoItemDTO.Name,
+                // CreationTime = todoItemDTO.DateTime.Now,
+                // UpdateTime = todoItemDTO.DateTime.Now,
             };
 
+            todoItem.CreationTime = DateTime.Now;
+        
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(
                 nameof(GetTodoItem),
-                new { id = todoItem.Id },
+                new { id = todoItem.Id,
+                 CreationTime = todoItem.CreationTime,
+                 },
                 ItemToDTO(todoItem));
         }
 

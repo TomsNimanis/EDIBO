@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-
 import { map } from 'rxjs/operators';
 
 // interface RateDateRates {
@@ -47,6 +46,10 @@ export class TodoComponent implements OnInit {
 
   todos: any[];
 
+
+
+
+
   constructor(private restClient: HttpClient) {}
 
   ngOnInit(): void {
@@ -81,4 +84,17 @@ export class TodoComponent implements OnInit {
       // .replace('{base}', this.baseRate)
       // .replace('{symbols}', this.symbols);
   }
+
+  // submitForm() {
+  //   var formData: any = new FormData();
+  //   formData.append("name", this.form.get('name').value);
+  //   formData.append("isComplete", this.form.get('isComplete').value);
+  //   formData.append("secret", this.form.get('secret').value);
+
+  //   this.http.post('http://localhost:5000/api/TodoItems', formData).subscribe(
+  //     (response) => console.log(response),
+  //     (error) => console.log(error)
+  //   )
+  // }
+
 }

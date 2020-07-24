@@ -40,6 +40,19 @@
   </tbody>
 </table>
 
+<form novalidate name="frm1">
+  <div class="input-group col-md-12">
+      <input type="text" class="form-control input-lg" name="firstName" ng-model="user.firstName" />
+      <input type="text" class="form-control input-lg" name="lastName" ng-model="user.lastName" />
+      <span class="input-group-btn">
+              <button class="btn btn-info btn-lg" type="button" ng-click="submit($event, user)">
+                  <i class="glyphicon glyphicon-search"></i>
+              </button>
+          </span>
+  </div>
+</form>
+
+
 <!-- <div>
   {{todos | json}}
 </div> -->
