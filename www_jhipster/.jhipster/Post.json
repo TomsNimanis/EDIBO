@@ -1,0 +1,45 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [
+    {
+      "relationshipName": "blog",
+      "otherEntityName": "blog",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name",
+      "otherEntityRelationshipName": "post"
+    },
+    {
+      "relationshipName": "tag",
+      "otherEntityName": "tag",
+      "relationshipType": "many-to-many",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "post"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "Instant",
+      "fieldValidateRules": []
+    }
+  ],
+  "changelogDate": "20200728085549",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "no",
+  "entityTableName": "post",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}

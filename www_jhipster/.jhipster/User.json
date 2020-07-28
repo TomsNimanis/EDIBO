@@ -1,0 +1,32 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "profileName",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "avatar",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "postCount",
+      "fieldType": "Integer",
+      "fieldValidateRules": []
+    }
+  ],
+  "changelogDate": "20200728090158",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "no",
+  "entityTableName": "user",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}

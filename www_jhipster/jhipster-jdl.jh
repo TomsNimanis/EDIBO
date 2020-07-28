@@ -1,0 +1,68 @@
+entity Blog {
+	name String required
+    handle String required
+}
+
+entity User {
+	profileName String required
+    avatar ImageBlob required
+    postCount Number required
+
+}
+
+
+entity Post {
+	title String required
+    content String required
+    date Instant required
+}
+
+entity Tag {
+	Name String required
+}
+
+
+
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+
+
+/**startDate Instant,
+*	endDate Instant,
+*	language Language
+*/
+relationship ManyToOne {
+	Post to Blog
+    Blog to User
+}
+
+relationship ManyToMany {
+	Post to Tag
+}
+
+
+
+// defining multiple OneToMany relationships with comments
+
+
+// defining multiple oneToOne relationships
+//relationship OneToOne {
+//	JobHistory{job} to Job,
+//	JobHistory{department} to Department,
+//	JobHistory{employee} to Employee
+//}
+
+// Set pagination options
+//paginate JobHistory, Employee with infinite-scroll
+//paginate Job with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
